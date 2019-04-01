@@ -1,0 +1,28 @@
+{
+  "name": "daftacademy-frontend_levelup-2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kikarto@bitbucket.org/kikarto/daftacademy-frontend_levelup-2019.git"
+  },
+  "author": "MK",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kikarto/daftacademy-frontend_levelup-2019#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "webpack-cli": "^3.3.0"
+  },
+    "browserslist": "> 10%, not dead"
+}
