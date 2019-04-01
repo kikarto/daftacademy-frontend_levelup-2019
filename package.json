@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "watch-sass": "sass --watch src/sass/main.scss:dist/css/main.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://kikarto@bitbucket.org/kikarto/daftacademy-frontend_levelup-2019.git"
+    "url": "git+https://github.com/kikarto/daftacademy-frontend_levelup-2019.git"
   },
   "author": "MK",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/kikarto/daftacademy-frontend_levelup-2019#readme",
+  "homepage": "https://kikarto.github.io/daftacademy-frontend_levelup-2019/dist/index.html",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
