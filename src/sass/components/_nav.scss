@@ -1,0 +1,38 @@
+
+.nav {
+    max-width: calc(100vw - 2em);
+    margin: 2em;
+    padding: 15px;
+    
+    &-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @include lg {
+            flex-direction: row;
+            margin: 2em auto;
+            max-width: 1000px;
+        }
+
+        &__item {
+
+            a {
+                display: inline-block;
+                color: rgb(167, 193, 189);
+            }
+
+            &--activ a {
+                color: rgb(49, 64, 88);
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+
+
+

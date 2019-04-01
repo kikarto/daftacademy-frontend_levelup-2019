@@ -1,0 +1,68 @@
+
+$numPerRow: 5;
+$margin: 2%;
+
+@mixin rowWidthMargin($numPerRow, $margin){
+    width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+    margin-right: $margin;
+    margin-bottom: $margin;
+    &:nth-child(#{$numPerRow}n){
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.images {
+    max-width: calc(100vw - 2em);
+    margin: 2em;
+    padding: 15px;
+    
+    @include sm {
+        padding: 0 20px;
+    }
+    
+    @include lg {
+        margin: 2em auto;
+        max-width: 1000px;
+    }
+    
+    &__item {
+        float: left;
+        padding: 10px;
+        @include rowWidthMargin(1, 2%);
+
+        @include sm {
+            @include rowWidthMargin(1, 2%);
+        }
+
+        @include md {
+            @include rowWidthMargin(2, 2%);
+        }
+
+        @include lg {
+            @include rowWidthMargin(3, 2%);
+        }
+    }
+    
+}
+
+
+    
+.image {
+    
+    position: relative;
+    box-shadow: 0px 0px 20px 8px #ccc;
+
+    &__background {
+        max-width: 100%;
+    }
+
+    &__title {
+        @include centererY;
+        color: #fff;
+        font-size: 2em;
+    }
+
+}
+
+
