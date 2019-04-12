@@ -18,3 +18,6 @@ var c = clock();
 // test godziny 11:59:50
 //setTimeout(()=>c.test(11), 2000);
 
+import promise from './promise.js';
+var p = promise();
+
