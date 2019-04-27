@@ -21,4 +21,4 @@ let fib = function(num, ...arg){
     return result;
 }
 
-export default fib;
+module.exports = fib;
