@@ -27,6 +27,10 @@ describe('Fibonacci test', ()=>{
         expect(fib(-10)).toEqual([]);
     });
 
+    it('prawidłowe wywołanie, oczekiwany wynik jest tablica', () => {
+        expect(Array.isArray(fib(20))).toBe(true);
+    });
+
     it('prawidłowe wywołanie, oczekiwany wynik jest tablica z 20 elementami', () => {
         expect(fib(20).length === 20).toBe(true);
     });
